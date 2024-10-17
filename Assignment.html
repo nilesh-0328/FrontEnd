@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="assignment" class="p-10">
+      <section class="bg-purple-900 text-white p-6 rounded-lg">
+        <h2 class="text-2xl font-bold text-center mb-8">OUR SERVICES</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <!-- Emergency Plumbing Services -->
+          <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:rotate-360 hover:transform transition duration-500">
+            <div class="flex justify-center mb-4">
+              <!-- Icon here -->
+              <img src="https://img.icons8.com/ios-filled/50/plumbing.png" alt="Plumbing Icon"
+                            class="mx-auto">
+            </div>
+            <h3 class="text-xl font-bold text-center">Emergency Plumbing Services</h3>
+            <p class="text-center text-sm my-4">Our plumbers are ready 24/7 for any emergency, holidays, weekends, and holidays.</p>
+            <div class="text-center">
+              <a href="#" class="text-blue-600 font-bold">EXPLORE THIS SERVICE ></a>
+            </div>
+          </div>
+  
+          <!-- Plumbing and Drains -->
+          <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:rotate-360 hover:transform transition duration-500">
+            <div class="flex justify-center mb-4">
+              <!-- Icon here -->
+              <span class="material-icons md-48 text-blue-500 mx-auto">water_drop</span>
+            </div>
+            <h3 class="text-xl font-bold text-center">Plumbing and Drains</h3>
+            <p class="text-center text-sm my-4">We provide all plumbing services from drain repair to plumbing maintenance.</p>
+            <div class="text-center">
+              <a href="#" class="text-blue-600 font-bold">EXPLORE THIS SERVICE ></a>
+            </div>
+          </div>
+  
+          <!-- Water Damage -->
+          <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:rotate-360 hover:transform transition duration-500">
+            <div class="flex justify-center mb-4">
+              <!-- Icon here -->
+              <img src="https://img.icons8.com/ios-filled/50/water.png" alt="Water Damage Icon"
+                            class="mx-auto">
+            </div>
+            <h3 class="text-xl font-bold text-center">Water Damage</h3>
+            <p class="text-center text-sm my-4">Our team handles water damage repairs and restoration services to prevent future issues.</p>
+            <div class="text-center">
+              <a href="#" class="text-blue-600 font-bold">EXPLORE THIS SERVICE ></a>
+            </div>
+          </div>
+  
+          <!-- Water Heaters -->
+          <div class="bg-white text-black rounded-lg p-6 shadow-lg hover:rotate-360 hover:transform transition duration-500">
+            <div class="flex justify-center mb-4">
+              <!-- Icon here -->
+              <img src="https://img.icons8.com/ios-filled/50/water-heater.png" alt="Water Heaters Icon"
+                            class="mx-auto">
+            </div>
+            <h3 class="text-xl font-bold text-center">Water Heaters</h3>
+            <p class="text-center text-sm my-4">We repair and replace water heaters of all types with quality services.</p>
+            <div class="text-center">
+              <a href="#" class="text-blue-600 font-bold">EXPLORE THIS SERVICE ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      // JavaScript for rotation effect on hover
+      const services = document.querySelectorAll('.shadow-lg');
+      services.forEach(service => {
+        service.addEventListener('mouseover', () => {
+          anime({
+            targets: service,
+            rotate: '1turn',
+            duration: 800
+          });
+        });
+      });
+    </script>
+  </body>
+  
+</html>
